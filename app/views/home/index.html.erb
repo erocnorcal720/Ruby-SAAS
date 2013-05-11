@@ -1,0 +1,30 @@
+<div id="welcome" class="hero-unit span10">
+  <h1>Data Done Right</h1>
+  <h3>We are a competitive price and promotions tracking tool. Follow any product anywhere.</h3>
+</div>
+<div class="row span12 plans">
+  <div class="span3 well">
+    <div class="plan"><h2>Basic</h2></div>
+    <ul class="unstyled">
+      <li>Follow 10 Products a month</li>
+    </ul>
+    <h3>$75/month</h3>
+    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'basic'), :class => 'btn btn-primary' %> 
+  </div>
+  <div class="span3 well featured">
+    <div class="plan featured-plan"><h2>Premiere</h2></div>
+    <ul class="unstyled">
+      <li>Follow 30 Products a month</li>
+    </ul>
+    <h3>$750/month</h3>
+    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'premiere'), :class => 'btn btn-primary' %> 
+  </div>
+  <div class="span3 well">
+    <div class="plan"><h2>Unlimited</h2></div>
+    <ul class="unstyled">
+      <li>Follow an Unlimited Number of Products a month</li>
+    </ul>
+    <h3>$7500/month</h3>
+    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'unlimited'), :class => 'btn btn-primary' %> 
+  </div>
+</div>
